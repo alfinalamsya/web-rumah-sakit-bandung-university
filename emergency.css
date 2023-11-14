@@ -1,0 +1,221 @@
+:root {
+  --primary: #3c93da;
+  --bg: #000000;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 7%;
+  background-color: #0d558f;
+  border-bottom: 2px solid #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#menu {
+  display: none;
+}
+
+.lainnya {
+  min-height: 100vh;
+  padding: 55px 0 50px 0;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: block;
+  flex-wrap: wrap;
+}
+
+.lainnya .box-lainnya {
+  display: grid;
+  padding: 0.5rem 7%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  row-gap: 50px;
+}
+.lainnya .box-lainnya .box {
+  text-align: center;
+  color: #fff;
+  transition: 0.3s ease;
+  padding: 0.2rem 6% 1rem;
+  max-width: 40rem;
+  box-shadow: 1px 1px 3px rgb(2, 2, 255);
+  justify-content: center;
+}
+
+.lainnya .box-lainnya .box img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.lainnya .box-lainnya .box button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  padding: 0 60px 0 40px;
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  cursor: pointer;
+}
+
+.lainnya .box-lainnya .box h1 {
+  margin: 1rem auto 1rem;
+}
+.lainnya .box-lainnya .box h1 {
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.lainnya .box-lainnya .box p {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: 100;
+  list-style: none;
+  line-height: 1.6;
+}
+
+.lainnya .box-lainnya .box button:hover {
+  background-color: #0d558f;
+  transition: all 0.3s ease;
+}
+
+.lainnya .box-lainnya .box h1 {
+  margin: 1rem auto 1rem;
+}
+.lainnya .box-lainnya .box h1 {
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.box-lainnya .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 25px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #ffffff;
+  padding-right: 23px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #ffffff;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+  color: rgb(255, 255, 255);
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.input-box input:focus ~ i,
+.input-box input:valid ~ i {
+  color: rgb(0, 119, 255);
+}
+
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 1rem;
+}
+footer .social {
+  padding: 1rem 0;
+}
+footer .social a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .social a:hover {
+  color: var(--bg);
+}
+
+footer .link {
+  margin-bottom: 1.4rem;
+}
+
+footer .link a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+
+footer .link a:hover {
+  color: var(--bg);
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
